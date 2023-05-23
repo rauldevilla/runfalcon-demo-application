@@ -1,0 +1,25 @@
+{
+  "name": "runfalcon-demo-application",
+  "version": "1.0.0",
+  "description": "Demo application for runfalcon scenarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rauldevilla/runfalcon-demo-application.git"
+  },
+  "keywords": [
+    "runfalcon"
+  ],
+  "author": "Raul A. de Villa C.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rauldevilla/runfalcon-demo-application/issues"
+  },
+  "homepage": "https://github.com/rauldevilla/runfalcon-demo-application#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
