@@ -16,7 +16,7 @@ const buildReponse = () => {
   return response;
 };
 
-const getDelaySeconds = () => {
+const getDelayTime = () => {
   const milliseconds = getRandomBetween(1, 1000);
   return milliseconds;
 };
@@ -24,7 +24,7 @@ const getDelaySeconds = () => {
 const send = (res) => {
   setTimeout(() => {
     res.send(buildReponse());
-  }, getDelaySeconds());
+  }, getDelayTime());
 };
 
 router.get('/', (req, res) => {
