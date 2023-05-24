@@ -18,7 +18,6 @@ const buildReponse = () => {
 
 const getDelaySeconds = () => {
   const milliseconds = getRandomBetween(1, 1000);
-  logger.debug(`Milliseconds: ${milliseconds}`);
   return milliseconds;
 };
 
@@ -29,7 +28,6 @@ const send = (res) => {
 };
 
 router.get('/', (req, res) => {
-    logger.debug('Process');
     send(res);
 });
 

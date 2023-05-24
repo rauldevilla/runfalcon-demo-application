@@ -3,6 +3,7 @@ const logger = require("./util/logger.util");
 const requestLoggerMiddleware = require("./middleware/request-loggin.middleware");
 
 const processRoute = require('./routes/process.route');
+const tokenRoute = require('./routes/token.route');
 
 const port = 3000;
 
@@ -13,6 +14,7 @@ const addRoutes = () => {
     res.send({ status: 'OK' });
   });
   app.use('/process', processRoute);
+  app.use('/token', tokenRoute);
 };
 
 const addMiddlewares = () => {
