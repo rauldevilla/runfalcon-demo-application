@@ -1,6 +1,6 @@
 const express = require("express");
-const { logger } = require("./util/logger.util");
-const { requestLogger } = require("./middleware/request-loggin.middleware");
+const logger = require("./util/logger.util");
+const requestLoggerMiddleware = require("./middleware/request-loggin.middleware");
 
 const processRoute = require('./routes/process.route');
 
@@ -16,7 +16,7 @@ const addRoutes = () => {
 };
 
 const addMiddlewares = () => {
-  app.use(requestLogger);
+  app.use(requestLoggerMiddleware);
 };
 
 const startApp = () => {

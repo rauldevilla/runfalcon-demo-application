@@ -1,3 +1,4 @@
+const { getRandomBetween } = require('./random.util');
 
 const names = [
     'Lucía',
@@ -106,7 +107,7 @@ const names = [
   ];
 
 const getRandomName = () => {
-    const index = Math.floor(Math.random() * 100);
+    const index = getRandomBetween(0, names.length - 1);
     return names[index];
 };
 

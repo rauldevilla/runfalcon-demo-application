@@ -25,6 +25,4 @@ const buildLogger = () => {
 
 const logger = buildLogger();
 
-module.exports = {
-    logger   
-};
+module.exports = logger;
