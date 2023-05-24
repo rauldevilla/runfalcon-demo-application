@@ -2,6 +2,7 @@ const express = require("express");
 const logger = require("./util/logger.util");
 const requestLoggerMiddleware = require("./middleware/request-loggin.middleware");
 
+const printLogo = require('./util/logo-printer.util');
 const processRoute = require('./routes/process.route');
 const tokenRoute = require('./routes/token.route');
 
@@ -30,6 +31,7 @@ const startApp = () => {
 const start = () => {
   addMiddlewares();
   addRoutes();
+  printLogo();
   startApp();
 };
 
