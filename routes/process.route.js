@@ -28,7 +28,7 @@ const buildReponse = (req) => {
 };
 
 const getDelayTime = () => {
-  const milliseconds = getRandomBetween(0, 1000);
+  const milliseconds = getRandomBetween(1000, 4000);
   return milliseconds;
 };
 
