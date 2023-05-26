@@ -9,7 +9,7 @@ const buildToken = () => {
 };
 
 router.get("/", (req, res) => {
-  res.send(buildToken());
+  res.send({token: buildToken()});
 });
 
 module.exports = router;
